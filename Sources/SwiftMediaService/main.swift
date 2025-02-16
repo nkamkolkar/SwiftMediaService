@@ -19,7 +19,8 @@ struct MediaServer {
         let app = Application(env)
         defer { app.shutdown() }
         
-        configureRoutes(app)
+        JWTConfig.setupSigners(app: app)
+        routes.configureRoutes(app)
         try configure(app)
        
         
@@ -49,23 +50,10 @@ struct MediaServer {
   
         
     }
-
-    
-    /// Configures API routes.
-    private static func configureRoutes(_ app: Application) {
-        AppLogger.shared.logInfo("Configuring routes...")  // Add this for debugging
-        app.get("health") { req in
-               return "Media server is running!"
-           }
-        
-        let fileController = FileController()
-        fileController.routes(app)
-        
-    }
-    
    
 }
 
+//Main Function
 do{
     let ms = MediaServer()
     try MediaServer.start()

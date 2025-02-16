@@ -12,6 +12,8 @@ let package = Package(
     dependencies: [
         // Essential networking and web framework
         .package(url: "https://github.com/vapor/vapor.git", from: "4.83.1"),
+        .package(url: "https://github.com/vapor/jwt.git", from: "4.0.0"),
+    
         
         // OpenAPI support
         .package(url: "https://github.com/apple/swift-openapi-generator", .upToNextMinor(from: "0.1.0")),
@@ -28,6 +30,7 @@ let package = Package(
                 .product(name: "Vapor", package: "vapor"),
                 .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime"),
                 .product(name: "OpenAPIVapor", package: "swift-openapi-vapor"),
+                .product(name: "JWT", package: "jwt"),
                 "Files"
             ],
 
