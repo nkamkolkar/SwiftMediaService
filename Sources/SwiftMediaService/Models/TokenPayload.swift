@@ -10,11 +10,14 @@ import Foundation
 import Vapor
 import JWT
 
-struct TokenPayload: JWTPayload {
+
+struct TokenPayload: Content, Authenticatable, JWTPayload {
     var userID: UUID
+    var username: String
     var exp: ExpirationClaim
 
     func verify(using signer: JWTSigner) throws {
-        try exp.verifyNotExpired()
+        try self.exp.verifyNotExpired()
     }
 }
+

@@ -20,7 +20,7 @@ struct MediaServer {
         defer { app.shutdown() }
         
         JWTConfig.setupSigners(app: app)
-        routes.configureRoutes(app)
+        try routes.configureRoutes(app)
         try configure(app)
        
         
@@ -42,12 +42,16 @@ struct MediaServer {
     private static func configure(_ app: Application) throws {
         // Set maximum request body size for uploads
         app.routes.defaultMaxBodySize = "100mb"
+        
         // Register middleware
         app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
         app.middleware.use(CORSMiddleware())
-
+        
+        //Add migrations to FluentDB
+        //app.migrations.add(CreateUserMigration())
         app.logger.logLevel = .debug
-  
+        
+        try StorageService.configure(app)
         
     }
    

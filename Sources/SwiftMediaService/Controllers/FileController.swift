@@ -26,6 +26,10 @@ struct FileController {
             let filePath: String
         }
 
+        let payload =  try req.authenticatedUser()
+        
+        print("✅ upload Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
+        
         return req.body.collect().flatMapThrowing { body in
             guard let data = body, data.readableBytes > 0 else {
                 throw Abort(.badRequest, reason: "No file uploaded.")
@@ -110,6 +114,10 @@ struct FileController {
         let baseDirectory = FilePathManager.shared.publicBaseDirectory.path
         AppLogger.shared.logInfo("download: baseDirectory: \(baseDirectory) FileName: \(fileName)")
         
+        let payload =  try req.authenticatedUser()
+        
+        print("✅ download Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
+        
         // Perform a recursive search
         guard let filePathString = findFileRecursively(baseDirectory: baseDirectory, fileName: fileName) else {
             AppLogger.shared.logWarning("File \(fileName) not found! Aborting")
@@ -164,6 +172,10 @@ struct FileController {
         let fileManager = FileManager.default
         let storagePath = FilePathManager.shared.publicBaseDirectory
 
+         let payload =  try req.authenticatedUser()
+
+        print("✅ List files Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
+        
         guard let files = try? fileManager.contentsOfDirectory(atPath: storagePath.path) else {
             throw Abort(.internalServerError, reason: "Failed to list files.")
         } 
@@ -173,10 +185,26 @@ struct FileController {
 
     
     func routes(_ app: Application) {
-        let fileRoutes = app.grouped("files")
-        fileRoutes.post("upload", use: upload)
-        fileRoutes.get("download", ":filename", use: download)
-        fileRoutes.get("", use: listFiles)
+        
+        let authMiddleware = JWTMiddleware() // Use JWTMiddleware for authentication
+        
+        let protected = app.grouped(authMiddleware)
+        
+        //let protected = app.grouped(User.authenticator(), User.guardMiddleware())
+        // Protected routes
+        protected.post("upload", use: upload)
+        protected.get("download", ":fileID", use: download)
+        protected.get("files", use: listFiles)
     }
 }
 
+
+//Create a helper function to test for authenticated user each time.
+extension Request {
+    func authenticatedUser() throws -> TokenPayload {
+        guard let payload = self.auth.get(TokenPayload.self) else {
+            throw Abort(.unauthorized, reason: "User not authenticated.")
+        }
+        return payload
+    }
+}
