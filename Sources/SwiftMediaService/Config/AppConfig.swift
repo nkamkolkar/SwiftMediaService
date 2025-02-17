@@ -9,8 +9,8 @@ struct AppConfig {
     let allowedImageExtensions: [String]
     
     // Maximum file sizes in bytes
-    let maxVideoSize: Int
-    let maxImageSize: Int
+    let maxVideoSize: Int64
+    let maxImageSize: Int64
     
     // Default configuration
     static let `default` = AppConfig(

@@ -63,9 +63,9 @@ struct AuthController {
         let inputPassword = credentials.password
         let storedPassword = user.passwordHash
 
-        print("**********Input Password: \(inputPassword)")
-        print("**********Stored Hash: \(storedPassword)")
-        print("**********Verification Result: \(try? Bcrypt.verify(inputPassword, created: storedPassword))")
+        //print("**********Input Password: \(inputPassword)")
+        //print("**********Stored Hash: \(storedPassword)")
+        //print("**********Verification Result: \(try? Bcrypt.verify(inputPassword, created: storedPassword))")
         
         // Generate JWT token (assuming you have a function for this)
         //let token = try generateJWT(for: user, req: req)

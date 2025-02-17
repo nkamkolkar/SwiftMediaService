@@ -11,21 +11,22 @@ import UniformTypeIdentifiers // Required for MIME type detection
 
 /// Handles media file uploads and retrieval.
 struct FileController {
-
+    
     /**
-        upload a file to the media server. files can be only video or images
+     upload a file to the media server. files can be only video or images
      */
     func upload(req: Request) throws -> EventLoopFuture<Response> {
-        let maxVideoSize: Int64 = 100 * 1024 * 1024 // 100MB
-        let maxImageSize: Int64 = 20 * 1024 * 1024 // 20MB
-        let allowedVideoTypes = ["mp4", "mov", "avi"]
-        let allowedImageTypes = ["jpeg", "png", "heic"]
+        
+        let maxVideoSize: Int64 = AppConfig.default.maxVideoSize // 100MB
+        let maxImageSize: Int64 = AppConfig.default.maxImageSize // 20MB
+        let allowedVideoTypes = AppConfig.default.allowedVideoExtensions
+        let allowedImageTypes = AppConfig.default.allowedImageExtensions
         
         struct UploadResponse: Content {
             let filename: String
             let filePath: String
         }
-
+        
         let payload =  try req.authenticatedUser()
         
         print("✅ upload Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
@@ -35,27 +36,24 @@ struct FileController {
                 throw Abort(.badRequest, reason: "No file uploaded.")
             }
             
-            // Extract content type
-            guard let contentType = req.headers.contentType?.description.lowercased() else {
-                throw Abort(.unsupportedMediaType, reason: "Missing content type.")
+            guard let filePart = req.body.data else {
+                throw Abort(.badRequest, reason: "No file data found")
             }
             
-            // Extract filename from headers
-            let originalFileName = req.headers.first(name: .contentDisposition)?
-                .replacingOccurrences(of: "attachment; filename=", with: "")
-                .trimmingCharacters(in: .whitespacesAndNewlines)
-                .replacingOccurrences(of: "\"", with: "") // Remove extra quotes
-                ?? "uploadedFile"
-                
-
-            AppLogger.shared.logInfo("Original file name: \(originalFileName)")
-
+            //If client passes this in header use it, else use a generic name.
+            let filename = req.headers["X-Filename"].first ?? "\(UUID().uuidString).bin"
+            
+            
+            // Save original final name from client
+            let originalFileName = filename
+            
+            AppLogger.shared.logInfo("Client file name: \(originalFileName)")
             
             // Extract file extension correctly
             var fileExtension = URL(fileURLWithPath: originalFileName).pathExtension.lowercased()
             
             AppLogger.shared.logInfo("Extracted file extension from FileName: \(fileExtension)")
-          
+            
             // Fallback: Extract from Content-Type if needed
             if fileExtension.isEmpty, let contentType = req.headers.contentType?.description.lowercased() {
                 fileExtension = contentType.components(separatedBy: "/").last ?? ""
@@ -63,14 +61,14 @@ struct FileController {
             }
             
             AppLogger.shared.logInfo("Extracted from ContentType: \(fileExtension)")
-
+            
             // Validate file type
             let isValidVideo = allowedVideoTypes.contains(fileExtension)
             let isValidImage = allowedImageTypes.contains(fileExtension)
             
             AppLogger.shared.logInfo("Allowed video types: \(allowedVideoTypes.joined(separator: ", "))")
             AppLogger.shared.logInfo("Allowed image types: \(allowedImageTypes.joined(separator: ", "))")
-
+            
             
             guard isValidVideo || isValidImage else {
                 throw Abort(.unsupportedMediaType, reason: "Invalid file type.")
@@ -83,37 +81,77 @@ struct FileController {
                 throw Abort(.payloadTooLarge, reason: "File exceeds allowed size.")
             }
 
-            let baseDirectory = FilePathManager.shared.publicBaseDirectory.path
             // Determine storage path
-            let uniqueFileName = FilePathManager.shared.getFilePath(for: originalFileName, captureDate: nil)
+            let uniqueFileURL = try FilePathManager.shared.getFilePath(for: originalFileName, captureDate: nil)
             
-            // Generate a unique filename while preserving extension
-            let finalFileName = "\(uniqueFileName).\(fileExtension)"
-            AppLogger.shared.logInfo("finalFileName Path to \(finalFileName)")
-            let fileURL = URL(string: finalFileName)
+            //save the final path and URL
+            let finalFileName = "\(uniqueFileURL)"
+            let fileURL = uniqueFileURL
             AppLogger.shared.logInfo("Saving Path to \(String(describing: fileURL))")
             
-       
             // Convert ByteBuffer to Data and write
             let fileData = Data(buffer: data) // Ensure `data` exists
-
+            
             do {
-                try fileData.write(to: fileURL!)
-                //let response = UploadResponse(filename: finalFileName, filePath: fileURL.path)
-                let response = UploadResponse(filename: finalFileName, filePath: fileURL!.path)
+                try fileData.write(to: fileURL)
+            
+                // Return a publicly accessible URL
+                //let baseURL = req.application.http.server.configuration.hostname
+                //let fileURL = "\(baseURL)/uploads/\(fileURL)"
+
+                let baseURL = "http://127.0.0.1:8080"
+                var response: UploadResponse
+                
+                //TODO Clean up the flow and simplify 
+                if let relativePath = getRelativePath(from: finalFileName){
+                    let finalURL = baseURL + relativePath
+                    print(finalURL)  // Output: http://127.0.0.1:8080/Uploads/2025/02/17/GUID/myimg.jpg
+                    response = UploadResponse(filename: originalFileName, filePath: baseURL + relativePath)
+                }else{
+                    response = UploadResponse(filename: originalFileName, filePath: baseURL + "FileNotFound")
+                }
                 return try Response(status: .ok, body: .init(data: JSONEncoder().encode(response)))
             } catch {
                 throw Abort(.internalServerError, reason: "Failed to save file.")
             }
         }
     }
+    
+    func getRelativePath(from fullPath: String) -> String? {
+        let baseFolder = "/Uploads/"
+        
+        // Strip the "file://" prefix if present
+        let sanitizedPath = fullPath.replacingOccurrences(of: "file://", with: "")
 
+        print("FileController.getRelativePath: Finding \(baseFolder) in \(sanitizedPath)")
+        
+        if let range = sanitizedPath.range(of: baseFolder) {
+            print("FileController.getRelativePath: Found \(String(sanitizedPath[range.lowerBound...]))")
+            return String(sanitizedPath[range.lowerBound...])  // Extract everything after "/Uploads/"
+        }
+        
+        print("FileController.getRelativePath: Could not find \(baseFolder) in \(sanitizedPath)")
+        return nil  // Return nil if "/Uploads/" is not found
+    }
+
+
+    
+    
+    
     /// Downloads a file from storage.
     func download(req: Request) throws -> Response {
+        
         let fileName = req.parameters.get("filename")!
-        let baseDirectory = FilePathManager.shared.publicBaseDirectory.path
+        
+        print("FileController.download: downloading \(fileName)")
+        
+        //let baseDirectory = FilePathManager.shared.publicBaseDirectory.path
+        let baseDirectory = FilePathManager.shared.getPublicDirectory()
+        print("FileController.download: baseDirectory \(baseDirectory)")
+        
         AppLogger.shared.logInfo("download: baseDirectory: \(baseDirectory) FileName: \(fileName)")
         
+        print("FileController.download: Authenticating request")
         let payload =  try req.authenticatedUser()
         
         print("✅ download Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
@@ -123,13 +161,13 @@ struct FileController {
             AppLogger.shared.logWarning("File \(fileName) not found! Aborting")
             throw Abort(.notFound, reason: "File not found.")
         }
-
+        
         let fileURL = URL(fileURLWithPath: filePathString)
-
+        
         AppLogger.shared.logInfo("Serving file at path: \(fileURL.path)")
         let data = try Data(contentsOf: fileURL)
         let response = Response(body: .init(data: data))
-
+        
         // Determine MIME type using UTType
         // Key Fixes Implemented:
         // 1. Replaced the missing FileExtensionClassifier with Apple's UTType for accurate MIME type detection, ensuring correct Content-Type headers.
@@ -139,7 +177,7 @@ struct FileController {
         let mimeType = UTType(filenameExtension: fileExtension)?.preferredMIMEType ?? "application/octet-stream"
         response.headers.replaceOrAdd(name: .contentType, value: mimeType)
         
-
+        
         // Set Content-Disposition to suggest download
         response.headers.add(name: .contentDisposition, value: "attachment; filename=\"\(fileName)\"")
         
@@ -155,7 +193,7 @@ struct FileController {
         guard let enumerator = fileManager.enumerator(at: baseURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles], errorHandler: nil) else {
             return nil
         }
-
+        
         for case let fileURL as URL in enumerator {
             let lastPathComponent = fileURL.lastPathComponent
             AppLogger.shared.logInfo("Looking for file: \(fileURL.path)")
@@ -167,22 +205,22 @@ struct FileController {
         }
         return nil
     }
-
+    
     func listFiles(req: Request) throws -> [String] {
         let fileManager = FileManager.default
-        let storagePath = FilePathManager.shared.publicBaseDirectory
-
-         let payload =  try req.authenticatedUser()
-
+        let storagePath = FilePathManager.shared.getPublicDirectory()
+        
+        let payload =  try req.authenticatedUser()
+        
         print("✅ List files Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
         
-        guard let files = try? fileManager.contentsOfDirectory(atPath: storagePath.path) else {
+        guard let files = try? fileManager.contentsOfDirectory(atPath: storagePath) else {
             throw Abort(.internalServerError, reason: "Failed to list files.")
-        } 
+        }
         
         return files
     }
-
+    
     
     func routes(_ app: Application) {
         
@@ -193,8 +231,16 @@ struct FileController {
         //let protected = app.grouped(User.authenticator(), User.guardMiddleware())
         // Protected routes
         protected.post("upload", use: upload)
-        protected.get("download", ":fileID", use: download)
+        protected.get("download", ":filename", use: download)
         protected.get("files", use: listFiles)
+        
+        app.get("Uploads", "**") { req async throws -> Response in
+            let relativePath = req.parameters.getCatchall().joined(separator: "/")
+            let fullPath = FilePathManager.shared.getPublicDirectory() + "/" + relativePath
+
+            return req.fileio.streamFile(at: fullPath)
+        }
+
     }
 }
 
@@ -202,9 +248,11 @@ struct FileController {
 //Create a helper function to test for authenticated user each time.
 extension Request {
     func authenticatedUser() throws -> TokenPayload {
+        print("FileController.request.authenticatedUser() called")
         guard let payload = self.auth.get(TokenPayload.self) else {
             throw Abort(.unauthorized, reason: "User not authenticated.")
         }
+        print("FileController.request.authenticatedUser() user \(payload.username) authenticated.")
         return payload
     }
 }

@@ -11,7 +11,7 @@ let package = Package(
     ],
     dependencies: [
         // Essential networking and web framework
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.83.1"),
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.113.2"),
         .package(url: "https://github.com/vapor/jwt.git", from: "4.0.0"),
     
         
@@ -51,7 +51,15 @@ let package = Package(
         ),
         .testTarget(
             name: "SwiftMediaServiceTests",
-            dependencies: ["SwiftMediaService"],
-            path: "Tests/SwiftMediaServiceTests"),
+            
+            dependencies: [
+                .target(name: "SwiftMediaService"),
+                .product(name: "XCTVapor", package: "vapor")
+            ]
+            //path: "Tests/SwiftMediaServiceTests"),
+
+        )
+
+        
     ]
 )
