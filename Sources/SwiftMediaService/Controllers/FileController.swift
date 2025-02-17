@@ -29,7 +29,7 @@ struct FileController {
         
         let payload =  try req.authenticatedUser()
         
-        print("✅ upload Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
+        AppLogger.shared.logDebug("✅ upload Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
         
         return req.body.collect().flatMapThrowing { body in
             guard let data = body, data.readableBytes > 0 else {
@@ -47,7 +47,7 @@ struct FileController {
             // Save original final name from client
             let originalFileName = filename
             
-            AppLogger.shared.logInfo("Client file name: \(originalFileName)")
+            AppLogger.shared.logDebug("Client file name: \(originalFileName)")
             
             // Extract file extension correctly
             var fileExtension = URL(fileURLWithPath: originalFileName).pathExtension.lowercased()
@@ -106,6 +106,7 @@ struct FileController {
                 if let relativePath = getRelativePath(from: finalFileName){
                     let finalURL = baseURL + relativePath
                     print(finalURL)  // Output: http://127.0.0.1:8080/Uploads/2025/02/17/GUID/myimg.jpg
+                    AppLogger.shared.logInfo("Access URL: \(String(describing: finalURL))")
                     response = UploadResponse(filename: originalFileName, filePath: baseURL + relativePath)
                 }else{
                     response = UploadResponse(filename: originalFileName, filePath: baseURL + "FileNotFound")
@@ -122,15 +123,13 @@ struct FileController {
         
         // Strip the "file://" prefix if present
         let sanitizedPath = fullPath.replacingOccurrences(of: "file://", with: "")
-
-        print("FileController.getRelativePath: Finding \(baseFolder) in \(sanitizedPath)")
+        
+        AppLogger.shared.logDebug("FileController.getRelativePath: Finding \(baseFolder) in \(sanitizedPath)")
         
         if let range = sanitizedPath.range(of: baseFolder) {
-            print("FileController.getRelativePath: Found \(String(sanitizedPath[range.lowerBound...]))")
             return String(sanitizedPath[range.lowerBound...])  // Extract everything after "/Uploads/"
         }
         
-        print("FileController.getRelativePath: Could not find \(baseFolder) in \(sanitizedPath)")
         return nil  // Return nil if "/Uploads/" is not found
     }
 
@@ -143,18 +142,17 @@ struct FileController {
         
         let fileName = req.parameters.get("filename")!
         
-        print("FileController.download: downloading \(fileName)")
+        AppLogger.shared.logInfo("FileController.download: downloading \(fileName)")
         
         //let baseDirectory = FilePathManager.shared.publicBaseDirectory.path
         let baseDirectory = FilePathManager.shared.getPublicDirectory()
-        print("FileController.download: baseDirectory \(baseDirectory)")
-        
+
         AppLogger.shared.logInfo("download: baseDirectory: \(baseDirectory) FileName: \(fileName)")
         
-        print("FileController.download: Authenticating request")
+    
         let payload =  try req.authenticatedUser()
         
-        print("✅ download Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
+        AppLogger.shared.logInfo("✅ download Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
         
         // Perform a recursive search
         guard let filePathString = findFileRecursively(baseDirectory: baseDirectory, fileName: fileName) else {
@@ -196,7 +194,7 @@ struct FileController {
         
         for case let fileURL as URL in enumerator {
             let lastPathComponent = fileURL.lastPathComponent
-            AppLogger.shared.logInfo("Looking for file: \(fileURL.path)")
+            AppLogger.shared.logDebug("Looking for file: \(fileURL.path)")
             
             if lastPathComponent == fileName {
                 AppLogger.shared.logInfo("Found for file: \(fileURL.path)")
@@ -212,7 +210,7 @@ struct FileController {
         
         let payload =  try req.authenticatedUser()
         
-        print("✅ List files Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
+        AppLogger.shared.logInfo("✅ List files Authenticated request from user: \(payload.username) (ID: \(payload.userID))")
         
         guard let files = try? fileManager.contentsOfDirectory(atPath: storagePath) else {
             throw Abort(.internalServerError, reason: "Failed to list files.")
@@ -223,10 +221,17 @@ struct FileController {
     
     
     func routes(_ app: Application) {
+        AppLogger.shared.logInfo("FileController.getRelativePath: Setting up routes and Middlewares...")
         
         let authMiddleware = JWTMiddleware() // Use JWTMiddleware for authentication
         
         let protected = app.grouped(authMiddleware)
+        
+        AppLogger.shared.logInfo("Configuring routes...")  // Add this for debugging
+        app.get("health") { req in
+            AppLogger.shared.logInfo("Media server is healthy and running...")
+            return "Media server is healthy and running..."
+        }
         
         //let protected = app.grouped(User.authenticator(), User.guardMiddleware())
         // Protected routes
@@ -252,7 +257,7 @@ extension Request {
         guard let payload = self.auth.get(TokenPayload.self) else {
             throw Abort(.unauthorized, reason: "User not authenticated.")
         }
-        print("FileController.request.authenticatedUser() user \(payload.username) authenticated.")
+        AppLogger.shared.logInfo("FileController.request.authenticatedUser() user \(payload.username) authenticated.")
         return payload
     }
 }

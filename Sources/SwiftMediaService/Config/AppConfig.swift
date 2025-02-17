@@ -12,12 +12,15 @@ struct AppConfig {
     let maxVideoSize: Int64
     let maxImageSize: Int64
     
+    let JWTTokenExpiration: Double
+    
     // Default configuration
     static let `default` = AppConfig(
         storagePath: "\(FileManager.default.currentDirectoryPath)/storage",
         allowedVideoExtensions: ["mp4", "mov", "avi"],
         allowedImageExtensions: ["jpg", "jpeg", "png", "heic"],
         maxVideoSize: 100 * 1024 * 1024,  // 100MB
-        maxImageSize: 20 * 1024 * 1024    // 20MB
+        maxImageSize: 20 * 1024 * 1024,    // 20MB
+        JWTTokenExpiration: 60.0 * 60.0   // 1 hour
     )
 }

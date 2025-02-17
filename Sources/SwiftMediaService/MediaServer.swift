@@ -34,9 +34,10 @@ struct MediaServer {
         FilePathManager.shared.setPublicDirectory(outputDir)
         app.middleware.use(FileMiddleware(publicDirectory: FilePathManager.shared.getPublicDirectory()))
         
-        print("Media Server Configure: Public Directory: \(app.directory.publicDirectory)")
-        print("Media Server Configure: Filemanager Directory: \(FilePathManager.shared.getPublicDirectory())")
-        //app.middleware.use(CORSMiddleware())
+        AppLogger.shared.logInfo("Media Server Configure: Vapor Public Directory: \(app.directory.publicDirectory)")
+        AppLogger.shared.logDebug("Media Server Configure: setting public directory to...: \(FilePathManager.shared.getPublicDirectory())")
+        //print("Media Server Configure: Public Directory: \(app.directory.publicDirectory)")
+        //print("Media Server Configure: Filemanager Directory: \(FilePathManager.shared.getPublicDirectory())")
 
         try? StorageService.configure(app)
     }

@@ -19,29 +19,6 @@ struct AuthController {
     
     /// Handles user login and issues a JWT token.
     
-    func login_test(req: Request) throws -> TokenResponse {
-        let credentials = try req.content.decode(LoginRequest.self)
-        
-        // Find the user and verify password
-        guard let user = testUsers.first(where: {
-            $0.username == credentials.username &&
-            (try? Bcrypt.verify(credentials.password, created: $0.passwordHash)) == true
-        }) else {
-            throw Abort(.unauthorized, reason: "Invalid credentials")
-        }
-
-        // Generate JWT token
-        let payload = TokenPayload(
-            userID: user.id!,
-            username: user.username,
-            exp: .init(value: Date().addingTimeInterval(3600)) // 1-hour expiration
-        )
-        let token = try req.jwt.sign(payload)
-        
-        return TokenResponse(token: token)
-    }
-
-    
     func login(req: Request) async throws -> TokenResponse {
     
         
@@ -63,6 +40,7 @@ struct AuthController {
         let inputPassword = credentials.password
         let storedPassword = user.passwordHash
 
+        AppLogger.shared.logInfo("Logging in user: \(user.username) with stored hashed password: \(storedPassword)")
         //print("**********Input Password: \(inputPassword)")
         //print("**********Stored Hash: \(storedPassword)")
         //print("**********Verification Result: \(try? Bcrypt.verify(inputPassword, created: storedPassword))")
@@ -126,7 +104,7 @@ struct AuthController {
         let user = User(username: registerData.username, passwordHash: passwordHash)
         try await user.save(on: req.db)
 
-        req.logger.info("New user registered successfully: \(registerData.username)")
+        AppLogger.shared.logInfo("New user \(registerData.username) registered on \(Date())")
         return .created
     }
     
@@ -140,7 +118,8 @@ struct JWTMiddleware: AsyncMiddleware {
         }
 
         let payload = try request.jwt.verify(token, as: TokenPayload.self)
-        print("✅ Decoded Token Payload: \(payload)")  // DEBUG: Verify token contents
+        AppLogger.shared.logDebug("✅ Decoded Token Payload: \(payload)")
+        //print("✅ Decoded Token Payload: \(payload)")  // DEBUG: Verify token contents
         
         request.auth.login(payload)
         return try await next.respond(to: request)
@@ -149,9 +128,10 @@ struct JWTMiddleware: AsyncMiddleware {
 }
 
 
-
+// Generate a new JWT token with a one hour expiration
 func generateJWT(for user: User, req: Request) throws -> String {
-    let exp = ExpirationClaim(value: Date().addingTimeInterval(60 * 60)) // Token valid for 1 hour
+    let duration = AppConfig.default.JWTTokenExpiration
+    let exp = ExpirationClaim(value: Date().addingTimeInterval(duration)) // Token valid for 1 hour
     let payload = TokenPayload(userID: user.id!, username: user.username, exp: exp)
     return try req.jwt.sign(payload)
 }
