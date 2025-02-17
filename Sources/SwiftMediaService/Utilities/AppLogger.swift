@@ -7,7 +7,7 @@ struct AppLogger {
     private let logger: Logger
     
     private init() {
-        logger = Logger(label: "com.swiftmediaservice.app")
+        logger = Logger(label: "Amoha Logger")
         setupLogging()
     }
     
