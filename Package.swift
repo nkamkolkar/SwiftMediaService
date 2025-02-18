@@ -40,25 +40,24 @@ let package = Package(
                 .product(name: "Fluent", package: "fluent"),
                 .product(name:  "FluentPostgresDriver", package: "fluent-postgres-driver"), // Change to FluentSQLiteDriver if using SQLite
                 .product(name: "FluentSQLiteDriver", package: "fluent-sqlite-driver"),
-
                 "Files"
             ],
 
             path: "Sources/SwiftMediaService",
             resources: [
-                            .process("Config/openapi.yaml") // <-- Add this line
+                .process("Config/openapi.yaml") // <-- Add this line
             ]
         ),
-        .testTarget(
-            name: "SwiftMediaServiceTests",
-            
-            dependencies: [
-                .target(name: "SwiftMediaService"),
-                .product(name: "XCTVapor", package: "vapor")
-            ]
+        //.testTarget(
+            //name: "SwiftMediaServiceTests"
+            //Skipping for now for docker
+            //dependencies: [
+            //    .target(name: "SwiftMediaService"),
+            //    .product(name: "XCTVapor", package: "vapor")
+            //]
             //path: "Tests/SwiftMediaServiceTests"),
 
-        )
+        //)
 
         
     ]

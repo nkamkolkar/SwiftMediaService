@@ -5,7 +5,7 @@
 
 
 import Vapor
-import UniformTypeIdentifiers // Required for MIME type detection
+//import UniformTypeIdentifiers // Required for MIME type detection
 
 
 
@@ -171,9 +171,12 @@ struct FileController {
         // 1. Replaced the missing FileExtensionClassifier with Apple's UTType for accurate MIME type detection, ensuring correct Content-Type headers.
         // 2. Changed baseDirectory to publicBaseDirectory in FilePathManager to resolve private access issues when retrieving file paths.
         // 3. Fixed missing arguments in HTTPMediaType initialization by using UTType(filenameExtension:) to infer MIME types properly.
-        let fileExtension = fileURL.pathExtension
-        let mimeType = UTType(filenameExtension: fileExtension)?.preferredMIMEType ?? "application/octet-stream"
-        response.headers.replaceOrAdd(name: .contentType, value: mimeType)
+        //let fileExtension = fileURL.pathExtension
+        //let mimeType = UTType(filenameExtension: fileExtension)?.preferredMIMEType ?? "application/octet-stream"
+        //response.headers.replaceOrAdd(name: .contentType, value: mimeType)
+        //The above workaround was used to try to infer the Mime type so we can set it on response. The only way to do this was using some Apple specific libraries
+        // When dockerizing the app, this library is not avaialable on the ubuntu target so this is removed for now.
+        // we will rely on client to do this inference if required
         
         
         // Set Content-Disposition to suggest download
@@ -228,6 +231,7 @@ struct FileController {
         let protected = app.grouped(authMiddleware)
         
         AppLogger.shared.logInfo("Configuring routes...")  // Add this for debugging
+        print("Configuring routes...")
         app.get("health") { req in
             AppLogger.shared.logInfo("Media server is healthy and running...")
             return "Media server is healthy and running..."
