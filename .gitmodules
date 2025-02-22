@@ -1,3 +1,6 @@
 [submodule "MediaVaultServer"]
 	path = MediaVaultServer
 	url = https://github.com/nkamkolkar/MediaVaultServer.git
+[submodule "MediaVaultClients/MediaVaultClient"]
+	path = MediaVaultClients/MediaVaultClient
+	url = https://github.com/nkamkolkar/MediaVaultClient.git
