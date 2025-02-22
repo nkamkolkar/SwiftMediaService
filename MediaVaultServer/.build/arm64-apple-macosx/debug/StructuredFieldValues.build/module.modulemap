@@ -1,4 +1,0 @@
-module StructuredFieldValues {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/StructuredFieldValues.build/StructuredFieldValues-Swift.h"
-    requires objc
-}

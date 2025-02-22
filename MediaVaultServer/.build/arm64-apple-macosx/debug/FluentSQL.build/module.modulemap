@@ -1,4 +1,0 @@
-module FluentSQL {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/FluentSQL.build/FluentSQL-Swift.h"
-    requires objc
-}

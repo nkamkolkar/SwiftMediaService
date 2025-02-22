@@ -1,4 +1,0 @@
-module Tracing {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/Tracing.build/Tracing-Swift.h"
-    requires objc
-}

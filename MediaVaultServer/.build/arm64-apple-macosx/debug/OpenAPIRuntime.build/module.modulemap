@@ -1,4 +1,0 @@
-module OpenAPIRuntime {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIRuntime.build/OpenAPIRuntime-Swift.h"
-    requires objc
-}

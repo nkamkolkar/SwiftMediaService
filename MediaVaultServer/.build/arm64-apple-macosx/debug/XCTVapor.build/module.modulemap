@@ -1,4 +1,0 @@
-module XCTVapor {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/XCTVapor.build/XCTVapor-Swift.h"
-    requires objc
-}

@@ -1,4 +1,0 @@
-module NIOConcurrencyHelpers {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/NIOConcurrencyHelpers.build/NIOConcurrencyHelpers-Swift.h"
-    requires objc
-}

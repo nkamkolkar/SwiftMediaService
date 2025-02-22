@@ -1,4 +1,0 @@
-module NIOFileSystem {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/NIOFileSystem.build/NIOFileSystem-Swift.h"
-    requires objc
-}

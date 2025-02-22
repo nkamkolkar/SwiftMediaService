@@ -1,4 +1,0 @@
-module OpenAPIVapor {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIVapor.build/OpenAPIVapor-Swift.h"
-    requires objc
-}

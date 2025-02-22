@@ -1,4 +1,0 @@
-module Files {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/Files.build/Files-Swift.h"
-    requires objc
-}

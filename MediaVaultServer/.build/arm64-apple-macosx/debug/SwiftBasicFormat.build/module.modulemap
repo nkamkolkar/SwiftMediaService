@@ -1,4 +1,0 @@
-module SwiftBasicFormat {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftBasicFormat.build/SwiftBasicFormat-Swift.h"
-    requires objc
-}

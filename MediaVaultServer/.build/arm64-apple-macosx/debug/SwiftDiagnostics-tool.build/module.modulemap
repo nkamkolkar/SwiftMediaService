@@ -1,4 +1,0 @@
-module SwiftDiagnostics {
-    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftDiagnostics-tool.build/SwiftDiagnostics-Swift.h"
-    requires objc
-}
