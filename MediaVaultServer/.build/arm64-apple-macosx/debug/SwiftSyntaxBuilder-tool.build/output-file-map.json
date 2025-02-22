@@ -1,0 +1,77 @@
+{
+  "": {
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/master.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/ConvenienceInitializers.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ConvenienceInitializers.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ConvenienceInitializers.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ConvenienceInitializers~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ConvenienceInitializers.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/HasTrailingComma.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/HasTrailingComma.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/HasTrailingComma.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/HasTrailingComma~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/HasTrailingComma.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/Indenter.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Indenter.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Indenter.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Indenter~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Indenter.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/ResultBuilderExtensions.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilderExtensions.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilderExtensions.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilderExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilderExtensions.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/Syntax+StringInterpolation.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Syntax+StringInterpolation.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Syntax+StringInterpolation.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Syntax+StringInterpolation~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Syntax+StringInterpolation.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/SyntaxNodeWithBody.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxNodeWithBody.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxNodeWithBody.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxNodeWithBody~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxNodeWithBody.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/BuildableCollectionNodes.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableCollectionNodes.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableCollectionNodes.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableCollectionNodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableCollectionNodes.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/BuildableNodes.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableNodes.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableNodes.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableNodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/BuildableNodes.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/ResultBuilders.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilders.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilders.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilders~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/ResultBuilders.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/SyntaxExpressibleByStringInterpolationConformances.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxExpressibleByStringInterpolationConformances.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxExpressibleByStringInterpolationConformances.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxExpressibleByStringInterpolationConformances~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/SyntaxExpressibleByStringInterpolationConformances.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/Token.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Token.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Token.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Token~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Token.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-syntax/Sources/SwiftSyntaxBuilder/generated/Typealiases.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Typealiases.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Typealiases.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Typealiases~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxBuilder-tool.build/Typealiases.swiftdeps"
+  }
+}

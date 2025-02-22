@@ -1,0 +1,4 @@
+module SwiftSyntaxParser {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftSyntaxParser.build/SwiftSyntaxParser-Swift.h"
+    requires objc
+}

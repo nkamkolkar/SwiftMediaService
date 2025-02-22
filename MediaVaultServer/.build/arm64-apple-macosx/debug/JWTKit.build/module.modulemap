@@ -1,0 +1,4 @@
+module JWTKit {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/JWTKit.build/JWTKit-Swift.h"
+    requires objc
+}

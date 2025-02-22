@@ -1,0 +1,113 @@
+{
+  "": {
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/master.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Config/AppConfig.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppConfig.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppConfig.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppConfig~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppConfig.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Config/JWTConfig.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/JWTConfig.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/JWTConfig.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/JWTConfig~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/JWTConfig.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Controllers/AuthController.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AuthController.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AuthController.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AuthController~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AuthController.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Controllers/FileController.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FileController.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FileController.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FileController~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FileController.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/MediaServer.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaServer.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaServer.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaServer~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaServer.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Migrations/CreateUserMigration.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/CreateUserMigration.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/CreateUserMigration.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/CreateUserMigration~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/CreateUserMigration.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Models/ErrorResponse.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorResponse.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorResponse.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorResponse~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorResponse.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Models/MediaFile.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaFile.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaFile.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaFile~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MediaFile.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Models/TokenPayload.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/TokenPayload.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/TokenPayload.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/TokenPayload~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/TokenPayload.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Models/User.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/User.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/User.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/User~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/User.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Services/MetadataService.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MetadataService.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MetadataService.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MetadataService~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/MetadataService.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Services/StorageService.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/StorageService.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/StorageService.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/StorageService~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/StorageService.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Utilities/AppLogger.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppLogger.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppLogger.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppLogger~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/AppLogger.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Utilities/ErrorHandling.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorHandling.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorHandling.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorHandling~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/ErrorHandling.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Utilities/FilePathManager.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FilePathManager.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FilePathManager.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FilePathManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/FilePathManager.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/Utilities/routes.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/routes.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/routes.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/routes~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/routes.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/Sources/SwiftMediaService/main.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/main.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/main.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/main.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/resource_bundle_accessor.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftMediaService.build/resource_bundle_accessor.swiftdeps"
+  }
+}

@@ -1,0 +1,4 @@
+module OpenAPIKitCompat {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIKitCompat-tool.build/OpenAPIKitCompat-Swift.h"
+    requires objc
+}

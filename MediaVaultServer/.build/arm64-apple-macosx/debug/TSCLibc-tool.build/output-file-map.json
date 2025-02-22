@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/TSCLibc-tool.build/master.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-tools-support-core/Sources/TSCLibc/libc.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/TSCLibc-tool.build/libc.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/TSCLibc-tool.build/libc.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/TSCLibc-tool.build/libc~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/TSCLibc-tool.build/libc.swiftdeps"
+  }
+}

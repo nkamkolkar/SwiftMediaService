@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIVapor.build/master.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-openapi-vapor/Sources/OpenAPIVapor/VaporTransport.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIVapor.build/VaporTransport.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIVapor.build/VaporTransport.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIVapor.build/VaporTransport~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIVapor.build/VaporTransport.swiftdeps"
+  }
+}

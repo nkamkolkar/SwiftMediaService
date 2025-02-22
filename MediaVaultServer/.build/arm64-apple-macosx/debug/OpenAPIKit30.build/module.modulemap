@@ -1,0 +1,4 @@
+module OpenAPIKit30 {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/OpenAPIKit30.build/OpenAPIKit30-Swift.h"
+    requires objc
+}

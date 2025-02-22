@@ -1,0 +1,281 @@
+{
+  "": {
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/master.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/AddModifierRewriter.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AddModifierRewriter.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AddModifierRewriter.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AddModifierRewriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AddModifierRewriter.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/AllPublicDeclarationsHaveDocumentation.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AllPublicDeclarationsHaveDocumentation.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AllPublicDeclarationsHaveDocumentation.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AllPublicDeclarationsHaveDocumentation~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AllPublicDeclarationsHaveDocumentation.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/AlwaysUseLowerCamelCase.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AlwaysUseLowerCamelCase.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AlwaysUseLowerCamelCase.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AlwaysUseLowerCamelCase~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AlwaysUseLowerCamelCase.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/AmbiguousTrailingClosureOverload.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AmbiguousTrailingClosureOverload.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AmbiguousTrailingClosureOverload.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AmbiguousTrailingClosureOverload~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/AmbiguousTrailingClosureOverload.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/BeginDocumentationCommentWithOneLineSummary.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/BeginDocumentationCommentWithOneLineSummary.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/BeginDocumentationCommentWithOneLineSummary.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/BeginDocumentationCommentWithOneLineSummary~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/BeginDocumentationCommentWithOneLineSummary.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/DeclSyntaxProtocol+Comments.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DeclSyntaxProtocol+Comments.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DeclSyntaxProtocol+Comments.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DeclSyntaxProtocol+Comments~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DeclSyntaxProtocol+Comments.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/DoNotUseSemicolons.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DoNotUseSemicolons.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DoNotUseSemicolons.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DoNotUseSemicolons~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DoNotUseSemicolons.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/DontRepeatTypeInStaticProperties.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DontRepeatTypeInStaticProperties.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DontRepeatTypeInStaticProperties.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DontRepeatTypeInStaticProperties~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/DontRepeatTypeInStaticProperties.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/FileScopedDeclarationPrivacy.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FileScopedDeclarationPrivacy.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FileScopedDeclarationPrivacy.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FileScopedDeclarationPrivacy~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FileScopedDeclarationPrivacy.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/FullyIndirectEnum.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FullyIndirectEnum.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FullyIndirectEnum.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FullyIndirectEnum~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FullyIndirectEnum.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/FunctionDeclSyntax+Convenience.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FunctionDeclSyntax+Convenience.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FunctionDeclSyntax+Convenience.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FunctionDeclSyntax+Convenience~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/FunctionDeclSyntax+Convenience.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/GroupNumericLiterals.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/GroupNumericLiterals.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/GroupNumericLiterals.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/GroupNumericLiterals~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/GroupNumericLiterals.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/IdentifiersMustBeASCII.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/IdentifiersMustBeASCII.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/IdentifiersMustBeASCII.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/IdentifiersMustBeASCII~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/IdentifiersMustBeASCII.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/ImportsXCTestVisitor.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ImportsXCTestVisitor.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ImportsXCTestVisitor.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ImportsXCTestVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ImportsXCTestVisitor.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/ModifierListSyntax+Convenience.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ModifierListSyntax+Convenience.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ModifierListSyntax+Convenience.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ModifierListSyntax+Convenience~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ModifierListSyntax+Convenience.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NeverForceUnwrap.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverForceUnwrap.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverForceUnwrap.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverForceUnwrap~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverForceUnwrap.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NeverUseForceTry.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseForceTry.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseForceTry.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseForceTry~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseForceTry.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NeverUseImplicitlyUnwrappedOptionals.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseImplicitlyUnwrappedOptionals.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseImplicitlyUnwrappedOptionals.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseImplicitlyUnwrappedOptionals~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NeverUseImplicitlyUnwrappedOptionals.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoAccessLevelOnExtensionDeclaration.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAccessLevelOnExtensionDeclaration.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAccessLevelOnExtensionDeclaration.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAccessLevelOnExtensionDeclaration~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAccessLevelOnExtensionDeclaration.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoAssignmentInExpressions.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAssignmentInExpressions.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAssignmentInExpressions.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAssignmentInExpressions~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoAssignmentInExpressions.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoBlockComments.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoBlockComments.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoBlockComments.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoBlockComments~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoBlockComments.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoCasesWithOnlyFallthrough.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoCasesWithOnlyFallthrough.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoCasesWithOnlyFallthrough.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoCasesWithOnlyFallthrough~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoCasesWithOnlyFallthrough.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoEmptyTrailingClosureParentheses.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoEmptyTrailingClosureParentheses.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoEmptyTrailingClosureParentheses.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoEmptyTrailingClosureParentheses~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoEmptyTrailingClosureParentheses.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoLabelsInCasePatterns.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLabelsInCasePatterns.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLabelsInCasePatterns.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLabelsInCasePatterns~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLabelsInCasePatterns.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoLeadingUnderscores.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLeadingUnderscores.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLeadingUnderscores.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLeadingUnderscores~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoLeadingUnderscores.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoParensAroundConditions.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoParensAroundConditions.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoParensAroundConditions.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoParensAroundConditions~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoParensAroundConditions.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoPlaygroundLiterals.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoPlaygroundLiterals.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoPlaygroundLiterals.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoPlaygroundLiterals~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoPlaygroundLiterals.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/NoVoidReturnOnFunctionSignature.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoVoidReturnOnFunctionSignature.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoVoidReturnOnFunctionSignature.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoVoidReturnOnFunctionSignature~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/NoVoidReturnOnFunctionSignature.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/OneCasePerLine.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneCasePerLine.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneCasePerLine.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneCasePerLine~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneCasePerLine.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/OneVariableDeclarationPerLine.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneVariableDeclarationPerLine.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneVariableDeclarationPerLine.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneVariableDeclarationPerLine~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OneVariableDeclarationPerLine.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/OnlyOneTrailingClosureArgument.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OnlyOneTrailingClosureArgument.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OnlyOneTrailingClosureArgument.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OnlyOneTrailingClosureArgument~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OnlyOneTrailingClosureArgument.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/OrderedImports.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OrderedImports.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OrderedImports.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OrderedImports~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/OrderedImports.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/ReplaceTrivia.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReplaceTrivia.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReplaceTrivia.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReplaceTrivia~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReplaceTrivia.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/ReturnVoidInsteadOfEmptyTuple.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReturnVoidInsteadOfEmptyTuple.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReturnVoidInsteadOfEmptyTuple.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReturnVoidInsteadOfEmptyTuple~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ReturnVoidInsteadOfEmptyTuple.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/RuleNameCache+Generated.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/RuleNameCache+Generated.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/RuleNameCache+Generated.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/RuleNameCache+Generated~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/RuleNameCache+Generated.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/SemicolonSyntaxProtocol.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/SemicolonSyntaxProtocol.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/SemicolonSyntaxProtocol.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/SemicolonSyntaxProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/SemicolonSyntaxProtocol.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/TokenSyntax+Convenience.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/TokenSyntax+Convenience.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/TokenSyntax+Convenience.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/TokenSyntax+Convenience~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/TokenSyntax+Convenience.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseEarlyExits.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseEarlyExits.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseEarlyExits.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseEarlyExits~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseEarlyExits.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseLetInEveryBoundCaseVariable.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseLetInEveryBoundCaseVariable.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseLetInEveryBoundCaseVariable.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseLetInEveryBoundCaseVariable~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseLetInEveryBoundCaseVariable.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseShorthandTypeNames.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseShorthandTypeNames.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseShorthandTypeNames.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseShorthandTypeNames~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseShorthandTypeNames.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseSingleLinePropertyGetter.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSingleLinePropertyGetter.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSingleLinePropertyGetter.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSingleLinePropertyGetter~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSingleLinePropertyGetter.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseSynthesizedInitializer.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSynthesizedInitializer.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSynthesizedInitializer.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSynthesizedInitializer~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseSynthesizedInitializer.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseTripleSlashForDocumentationComments.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseTripleSlashForDocumentationComments.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseTripleSlashForDocumentationComments.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseTripleSlashForDocumentationComments~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseTripleSlashForDocumentationComments.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/UseWhereClausesInForLoops.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseWhereClausesInForLoops.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseWhereClausesInForLoops.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseWhereClausesInForLoops~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/UseWhereClausesInForLoops.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/ValidateDocumentationComments.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ValidateDocumentationComments.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ValidateDocumentationComments.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ValidateDocumentationComments~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/ValidateDocumentationComments.swiftdeps"
+  },
+  "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/swift-format/Sources/SwiftFormatRules/VarDeclSyntax+Convenience.swift": {
+    "dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/VarDeclSyntax+Convenience.d",
+    "object": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/VarDeclSyntax+Convenience.swift.o",
+    "swiftmodule": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/VarDeclSyntax+Convenience~partial.swiftmodule",
+    "swift-dependencies": "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftFormatRules.build/VarDeclSyntax+Convenience.swiftdeps"
+  }
+}

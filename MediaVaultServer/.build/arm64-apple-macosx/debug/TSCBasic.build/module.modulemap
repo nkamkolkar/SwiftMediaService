@@ -1,0 +1,4 @@
+module TSCBasic {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/TSCBasic.build/TSCBasic-Swift.h"
+    requires objc
+}

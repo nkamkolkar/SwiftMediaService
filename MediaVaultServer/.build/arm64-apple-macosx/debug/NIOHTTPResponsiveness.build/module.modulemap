@@ -1,0 +1,4 @@
+module NIOHTTPResponsiveness {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/NIOHTTPResponsiveness.build/NIOHTTPResponsiveness-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module SwiftRefactor {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftRefactor.build/SwiftRefactor-Swift.h"
+    requires objc
+}

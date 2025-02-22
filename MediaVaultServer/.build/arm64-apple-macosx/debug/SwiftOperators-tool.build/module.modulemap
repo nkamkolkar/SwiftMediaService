@@ -1,0 +1,4 @@
+module SwiftOperators {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SwiftOperators-tool.build/SwiftOperators-Swift.h"
+    requires objc
+}

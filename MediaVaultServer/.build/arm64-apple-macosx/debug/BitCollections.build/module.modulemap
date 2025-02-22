@@ -1,0 +1,4 @@
+module BitCollections {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/BitCollections.build/BitCollections-Swift.h"
+    requires objc
+}

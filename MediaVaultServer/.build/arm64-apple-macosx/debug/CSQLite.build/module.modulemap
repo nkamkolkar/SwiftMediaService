@@ -1,0 +1,4 @@
+module CSQLite {
+    umbrella "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/checkouts/sqlite-nio/Sources/CSQLite/include"
+    export *
+}

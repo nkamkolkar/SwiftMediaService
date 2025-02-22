@@ -1,0 +1,4 @@
+module ServiceLifecycleTestKit {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/ServiceLifecycleTestKit.build/ServiceLifecycleTestKit-Swift.h"
+    requires objc
+}

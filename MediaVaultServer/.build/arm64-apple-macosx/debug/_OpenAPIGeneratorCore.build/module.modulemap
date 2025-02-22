@@ -1,0 +1,4 @@
+module _OpenAPIGeneratorCore {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/_OpenAPIGeneratorCore.build/_OpenAPIGeneratorCore-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module SQLKit {
+    header "/Users/neelesh/Amoha/swift-dev/SwiftMediaService/MediaVaultServer/.build/arm64-apple-macosx/debug/SQLKit.build/SQLKit-Swift.h"
+    requires objc
+}

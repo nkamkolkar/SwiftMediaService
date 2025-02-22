@@ -1,0 +1,74 @@
+#
+//  openapi.yaml
+//  SwiftMediaService
+//
+//  Created by Neelesh Kamkolkar on 2/15/25.
+//
+
+
+openapi: 3.0.0
+info:
+  title: Swift Media Storage and Streaming API
+  description: API for uploading, storing, and streaming media files
+  version: 1.0.0
+servers:
+  - url: https://localhost:8080
+paths:
+  /health:
+    get:
+      summary: Health check endpoint
+      responses:
+        '200':
+          description: Server is running
+  /upload:
+    post:
+      summary: Upload media files
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '201':
+          description: File uploaded successfully
+  /files:
+    get:
+      summary: List stored media files
+      parameters:
+        - name: fileType
+          in: query
+          schema:
+            type: string
+          description: Filter by file type (image/video)
+      responses:
+        '200':
+          description: List of media files
+  /files/{id}:
+    get:
+      summary: Retrieve a media file by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: File retrieved successfully
+  /stream/{id}:
+    get:
+      summary: Stream a video file by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Video stream started
