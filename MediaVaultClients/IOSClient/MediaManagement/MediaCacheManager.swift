@@ -9,6 +9,7 @@ import Foundation
 struct MediaCacheManager {
     let fileManager = FileManager.default
     let cacheDirectory: URL
+    let isDemo: Bool = true
     
     public static var shared = MediaCacheManager()
     
@@ -20,6 +21,7 @@ struct MediaCacheManager {
         if !fileManager.fileExists(atPath: cacheDirectory.path) {
             try? fileManager.createDirectory(at: cacheDirectory, withIntermediateDirectories: true, attributes: nil)
         }
+        Swift.print("MediaCacheManager - Created Cache: \(cacheDirectory)")
     }
     
     /// Checks if a file is cached.
@@ -53,13 +55,41 @@ struct MediaCacheManager {
             let fileURLs = try fileManager.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil)
             let supportedFiles = fileURLs.filter { isValidMediaFile($0) }
             
-            Swift.print("MediaCacheManager - Found \(supportedFiles.count) media files in cache.")
+            Swift.print("MediaCacheManager - Found \(supportedFiles.count) media files in cache \(cacheDirectory)")
             return supportedFiles
         } catch {
             Swift.print("MediaCacheManager - Failed to read cache directory: \(error.localizedDescription)")
             return []
         }
     }
+    
+    
+    /// Retrieves all media files stored in the "DemoResources" folder inside the app bundle.
+    func getDemoMediaFiles() -> [URL] {
+        var demoFiles: [URL] = []
+        
+        // Locate the "DemoResources" folder inside the app bundle
+        guard let resourceURL = Bundle.main.resourceURL?.appendingPathComponent("DemoResources") else {
+            print("⚠️ DemoResources folder not found in the bundle.")
+            return []
+        }
+        
+        print("⚠️ DemoResources URL is \(resourceURL)")
+        do {
+            let fileURLs = try FileManager.default.contentsOfDirectory(at: resourceURL, includingPropertiesForKeys: nil)
+            
+            // Filter files to include only supported media types (e.g., images, videos)
+            demoFiles = fileURLs.filter { isValidMediaFile($0) }
+            
+            print("✅ Found \(demoFiles.count) demo media files.")
+        } catch {
+            print("❌ Error loading demo media files: \(error.localizedDescription)")
+        }
+        
+        return demoFiles
+    }
+
+    
     
     /// Checks if a file is a supported media format.
     private func isValidMediaFile(_ url: URL) -> Bool {

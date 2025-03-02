@@ -21,96 +21,117 @@ struct HomeView: View {
     @State private var newFileName = ""
     @State private var selectedItem: PhotosPickerItem?
     
-    var body: some View {
-        if !authService.isLoggedIn() {
-            LoginView()
-        }else{
-            
-            VStack {
-                if let selectedMedia = selectedMedia {
-                    MediaPreviewView(mediaURL: selectedMedia)
-                    
-                    AIGeneratedCaptionView()
+    //@State private var isUserLoggedIn: Bool = authService.isLoggedIn()
     
-                    MediaCarouselView(mediaFiles: mediaFiles, onSelect: { selected in
-                        self.selectedMedia = selected
-                    })
-                    //.frame(height: 200)
-                    
-                    HStack(spacing: 8){
-                        Button(action: {
-                            Task {
-                                await uploadService.uploadMedia(fileURL: selectedMedia)
+    //@Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        
+        if(!authService.isLoggedIn()){
+            VStack{
+                Image(systemName: "lightbulb.slash.fill")
+                    .font(.system(size: 72))
+                Text("You need to login first! Please login to continue. Click top right of screen")
+            }
+           
+        }else{
+            VStack{
+                if let selectedMedia = selectedMedia {
+                    VStack {
+                        MediaPreviewView(mediaURL: selectedMedia)
+                        
+                        AIGeneratedCaptionView()
+                        
+                        MediaCarouselView(mediaFiles: mediaFiles, onSelect: { selected in
+                            self.selectedMedia = selected
+                        })
+                        //.frame(height: 200)
+                        
+                        HStack(spacing: 8){
+                            Button(action: {
+                                Task {
+                                    await uploadService.uploadMedia(fileURL: selectedMedia)
+                                }
+                            }) {
+                                Label("Upload", systemImage: "square.and.arrow.up.fill")
+                                    .frame(width: 140, height: 45)
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .clipShape(Capsule()) // Rounded button shape
+                                    .cornerRadius(8)
+                                    .padding()
                             }
-                        }) {
-                            Label("Upload", systemImage: "square.and.arrow.up.fill")
-                                .frame(width: 140, height: 45)
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .clipShape(Capsule()) // Rounded button shape
-                                .cornerRadius(8)
-                                .padding()
-                        }
-                        .padding(8)
-                        .disabled(selectedMedia == nil)
-                        
-                        if let uploadStatus = uploadService.uploadStatus {
-                            Text(uploadStatus)
-                                .font(.caption)
-                                .foregroundColor(uploadStatus.contains("failed") ? Color.red : Color.green)
-                        } else {
-                            Text("No media available. Fetch a file to get started.")
-                                .padding()
-                                .foregroundColor(Color.black)
-                        }
-                        
-                        
-                        Button(action: {
-                            isFileInputPresented = true
-                        }) {
-                            Label("Download", systemImage: "square.and.arrow.down.fill")
-                                .frame(width: 140, height: 45)
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .clipShape(Capsule()) // Rounded button shape
-                                .cornerRadius(8)
-                                .padding()
-                        }
-                        .padding(8)
-                        .sheet(isPresented: $isFileInputPresented) {
-                            FileInputModal(
-                                fileName: $newFileName,
-                                isPresented: $isFileInputPresented,
-                                onDownload: {
-                                    Task {
-                                        let success = await fetchRemoteFile(fileName: newFileName)
-                                        if success {
-                                            DispatchQueue.main.async {
-                                                isFileInputPresented = false // Close modal on success
+                            .padding(8)
+                            .disabled(selectedMedia == nil)
+                            
+                            if let uploadStatus = uploadService.uploadStatus {
+                                Text(uploadStatus)
+                                    .font(.caption)
+                                    .foregroundColor(uploadStatus.contains("failed") ? Color.red : Color.green)
+                            } else {
+                                Text("No media available. Fetch a file to get started.")
+                                    .padding()
+                                    .foregroundColor(Color.black)
+                            }
+                            
+                            
+                            Button(action: {
+                                isFileInputPresented = true
+                            }) {
+                                Label("Download", systemImage: "square.and.arrow.down.fill")
+                                    .frame(width: 140, height: 45)
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .clipShape(Capsule()) // Rounded button shape
+                                    .cornerRadius(8)
+                                    .padding()
+                            }
+                            .padding(8)
+                            .sheet(isPresented: $isFileInputPresented) {
+                                FileInputModal(
+                                    fileName: $newFileName,
+                                    isPresented: $isFileInputPresented,
+                                    onDownload: {
+                                        Task {
+                                            let success = await fetchRemoteFile(fileName: newFileName)
+                                            if success {
+                                                DispatchQueue.main.async {
+                                                    isFileInputPresented = false // Close modal on success
+                                                }
                                             }
                                         }
                                     }
-                                }
-                            )
+                                )
+                            }
                         }
                     }
+                    .padding(20)
+                   
+                } else {
+                    VStack{
+                        Image(systemName: "lightbulb.slash.fill")
+                            .font(.system(size: 72))
+                        Text("Awesome! You are logged in! But, you don't seem to have any files on the server")
+                    }
                 }
-               
+                
             }
             .onAppear(perform: loadCachedMedia)
         }
-        
-        
+           
     }
     
     private func loadCachedMedia() {
-        let cachedFiles = MediaCacheManager.shared.getAllCachedFiles()
+        var cachedFiles : [URL]
+        cachedFiles = MediaCacheManager.shared.getAllCachedFiles()
         
         if let firstFile = cachedFiles.first {
             selectedMedia = firstFile
         }
         mediaFiles = cachedFiles
     }
+    
+    
     
     private func fetchRemoteFile(fileName: String) async -> Bool {
         let trimmedFileName = fileName.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -177,8 +198,8 @@ struct MediaCarouselView: View {
             .padding(.horizontal) // Adds some padding on the sides
         }
     }
-
-
+    
+    
     
     private func generateThumbnail(for url: URL) {
         DispatchQueue.global(qos: .background).async {

@@ -9,12 +9,13 @@ import SwiftUI
 
 
 struct VaultHomeView: View {
-    @State var selection: Tabs = .vault
+    @State var selection: Tabs = .demo
     @State var userLoggedIn: Bool = false
     @AppStorage("TabCustomizations") private var customization: TabViewCustomization
     
     enum Tabs: String {
         case home
+        case demo
         case camera
         case vault
         case settings
@@ -26,34 +27,37 @@ struct VaultHomeView: View {
     
     
     var body: some View {
-        
-       
-     
-      
-      
-            //Spacer()
-            //NavigationSplitView{
-            
-            
+  
+            NavigationSplitView{
 
-        
                     TabView(selection: $selection){
                         
                         Tab("Home", systemImage: "house", value: Tabs.home){
                             VStack{
-                                Text(" Home View ")
-                                Button("Go Vault"){
-                                    selection = .vault
+                                WelcomeView(showWelcome: $userLoggedIn, showRegistration: $userLoggedIn)
+                                Button("Try It Now"){
+                                    selection = .demo
                                 }
                             }
                             
                         }
                         .customizationID(Tabs.home.customizationID)
                         
+                        Tab("TryIt", systemImage: "figure.dance.circle.fill", value: Tabs.demo){
+                            VStack{
+                                TrialView()
+                                Button("Register!"){
+                                    selection = .home
+                                }
+                            }
+                            
+                        }
+                        .customizationID(Tabs.demo.customizationID)
+                        
                         
                         Tab("Vault", systemImage: "lock.circle.fill", value: Tabs.vault) {
                             VStack{
-                                Text("Vault")
+                                HomeView()
                                 Button("Go to Camera"){
                                     selection = .camera
                                 }
@@ -74,26 +78,35 @@ struct VaultHomeView: View {
                         
                         Tab("Settings", systemImage: "gear.circle.fill", value: Tabs.settings) {
                             VStack{
-                                Text("Settings")
+                                SettingsView()
                                 Button("Go to Home"){
                                     selection = .home
                                 }
                             }
                         }
                         .customizationID(Tabs.settings.customizationID)
-                        .tabPlacement(.automatic)
+                        //.tabPlacement(.automatic)
                         .customizationBehavior(.disabled, for: .sidebar)
                     } // TabView
                 
-                /**
+     
                  
                  
                 .toolbar {
                     ToolbarItem (placement: .navigationBarTrailing){
                         Button() {
                             userLoggedIn = AuthService.shared.isLoggedIn()
+                            if(userLoggedIn){
+                                AuthService.shared.logout()// For debugging
+                                userLoggedIn = false
+                                Swift.print("VaultHomeView: userLoggedIn \(userLoggedIn)")
+                            }else{
+                                userLoggedIn = true
+                                Swift.print("VaultHomeView: userLoggedIn \(userLoggedIn)")
+                            }
+                            
                         } label: {
-                            Image(systemName: userLoggedIn ? "person.badge.shield.exclamationmark" : "person.badge.shield.checkmark.fill")
+                            Image(systemName: (!userLoggedIn) ? "person.badge.shield.exclamationmark" : "person.badge.shield.checkmark.fill")
                                 .imageScale(.large)
                         }
                         
@@ -106,13 +119,8 @@ struct VaultHomeView: View {
             } detail: {
                 Text("Welcome to Media Vault")
             }
-                 */
+
         }
-        //.ignoresSafeArea(.all)
-        //.border(.white)
-       
-        //.frame(height: .greatestFiniteMagnitude)
-        //.border(.red)
     
 }
 

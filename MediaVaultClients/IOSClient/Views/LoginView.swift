@@ -60,8 +60,8 @@ struct LoginView: View {
         .fullScreenCover(isPresented: $showRegistration) {
             RegistrationView()
         }
-        .fullScreenCover(isPresented: $isUserLoggedIn) {  
-            VaultHomeView()
+        .fullScreenCover(isPresented: $isUserLoggedIn) {
+           HomeView()
         }
     }
 }

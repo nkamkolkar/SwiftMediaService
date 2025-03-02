@@ -1,0 +1,29 @@
+# Ignore Xcode User Data
+*.xcuserstate
+*.xcscmblueprint
+*.xcworkspace
+.DS_Store
+
+#Ignore older builds
+../MediaVaultClient.old
+../.DS_Store
+
+
+# Ignore Derived Data & Build Artifacts
+DerivedData/
+build/
+*.ipa
+*.app
+
+# Ignore Swift Package Manager & CocoaPods
+Packages/
+.swiftpm/
+Pods/
+*.xcworkspace
+
+# Ignore Preview Content (Optional)
+Preview Content/
+
+# Ignore Logs & Temporary Files
+*.log
+

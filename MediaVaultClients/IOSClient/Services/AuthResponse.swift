@@ -19,6 +19,7 @@ class AuthService : ObservableObject {
     private init() {}
     
     func isLoggedIn() -> Bool {
+        print("AuthService: isLoggedIn \(KeychainService.getToken() ?? "nil")")
         return (KeychainService.getToken() != nil)
     }
     
